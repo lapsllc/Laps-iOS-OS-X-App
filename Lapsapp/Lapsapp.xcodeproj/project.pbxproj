@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2755A2701C724F2C006B5C5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755A26F1C724F2C006B5C5E /* AppDelegate.swift */; };
+		2755A2721C724F2C006B5C5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755A2711C724F2C006B5C5E /* ViewController.swift */; };
+		2755A2751C724F2C006B5C5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2755A2731C724F2C006B5C5E /* Main.storyboard */; };
+		2755A2771C724F2C006B5C5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2755A2761C724F2C006B5C5E /* Assets.xcassets */; };
+		2755A27A1C724F2C006B5C5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2755A2781C724F2C006B5C5E /* LaunchScreen.storyboard */; };
+		2755A2851C724F2D006B5C5E /* LapsappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755A2841C724F2D006B5C5E /* LapsappTests.swift */; };
+		2755A2901C724F2D006B5C5E /* LapsappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755A28F1C724F2D006B5C5E /* LapsappUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2755A2811C724F2D006B5C5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2755A2641C724F2C006B5C5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2755A26B1C724F2C006B5C5E;
+			remoteInfo = Lapsapp;
+		};
+		2755A28C1C724F2D006B5C5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2755A2641C724F2C006B5C5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2755A26B1C724F2C006B5C5E;
+			remoteInfo = Lapsapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2755A26C1C724F2C006B5C5E /* Lapsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lapsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2755A26F1C724F2C006B5C5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2755A2711C724F2C006B5C5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2755A2741C724F2C006B5C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2755A2761C724F2C006B5C5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2755A2791C724F2C006B5C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2755A27B1C724F2C006B5C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2755A2801C724F2D006B5C5E /* LapsappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapsappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2755A2841C724F2D006B5C5E /* LapsappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapsappTests.swift; sourceTree = "<group>"; };
+		2755A2861C724F2D006B5C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2755A28B1C724F2D006B5C5E /* LapsappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapsappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2755A28F1C724F2D006B5C5E /* LapsappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapsappUITests.swift; sourceTree = "<group>"; };
+		2755A2911C724F2D006B5C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2755A2691C724F2C006B5C5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2755A27D1C724F2D006B5C5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2755A2881C724F2D006B5C5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2755A2631C724F2C006B5C5E = {
+			isa = PBXGroup;
+			children = (
+				2755A26E1C724F2C006B5C5E /* Lapsapp */,
+				2755A2831C724F2D006B5C5E /* LapsappTests */,
+				2755A28E1C724F2D006B5C5E /* LapsappUITests */,
+				2755A26D1C724F2C006B5C5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2755A26D1C724F2C006B5C5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2755A26C1C724F2C006B5C5E /* Lapsapp.app */,
+				2755A2801C724F2D006B5C5E /* LapsappTests.xctest */,
+				2755A28B1C724F2D006B5C5E /* LapsappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2755A26E1C724F2C006B5C5E /* Lapsapp */ = {
+			isa = PBXGroup;
+			children = (
+				2755A26F1C724F2C006B5C5E /* AppDelegate.swift */,
+				2755A2711C724F2C006B5C5E /* ViewController.swift */,
+				2755A2731C724F2C006B5C5E /* Main.storyboard */,
+				2755A2761C724F2C006B5C5E /* Assets.xcassets */,
+				2755A2781C724F2C006B5C5E /* LaunchScreen.storyboard */,
+				2755A27B1C724F2C006B5C5E /* Info.plist */,
+			);
+			path = Lapsapp;
+			sourceTree = "<group>";
+		};
+		2755A2831C724F2D006B5C5E /* LapsappTests */ = {
+			isa = PBXGroup;
+			children = (
+				2755A2841C724F2D006B5C5E /* LapsappTests.swift */,
+				2755A2861C724F2D006B5C5E /* Info.plist */,
+			);
+			path = LapsappTests;
+			sourceTree = "<group>";
+		};
+		2755A28E1C724F2D006B5C5E /* LapsappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2755A28F1C724F2D006B5C5E /* LapsappUITests.swift */,
+				2755A2911C724F2D006B5C5E /* Info.plist */,
+			);
+			path = LapsappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2755A26B1C724F2C006B5C5E /* Lapsapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2755A2941C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Lapsapp" */;
+			buildPhases = (
+				2755A2681C724F2C006B5C5E /* Sources */,
+				2755A2691C724F2C006B5C5E /* Frameworks */,
+				2755A26A1C724F2C006B5C5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lapsapp;
+			productName = Lapsapp;
+			productReference = 2755A26C1C724F2C006B5C5E /* Lapsapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2755A27F1C724F2D006B5C5E /* LapsappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2755A2971C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappTests" */;
+			buildPhases = (
+				2755A27C1C724F2D006B5C5E /* Sources */,
+				2755A27D1C724F2D006B5C5E /* Frameworks */,
+				2755A27E1C724F2D006B5C5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2755A2821C724F2D006B5C5E /* PBXTargetDependency */,
+			);
+			name = LapsappTests;
+			productName = LapsappTests;
+			productReference = 2755A2801C724F2D006B5C5E /* LapsappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2755A28A1C724F2D006B5C5E /* LapsappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2755A29A1C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappUITests" */;
+			buildPhases = (
+				2755A2871C724F2D006B5C5E /* Sources */,
+				2755A2881C724F2D006B5C5E /* Frameworks */,
+				2755A2891C724F2D006B5C5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2755A28D1C724F2D006B5C5E /* PBXTargetDependency */,
+			);
+			name = LapsappUITests;
+			productName = LapsappUITests;
+			productReference = 2755A28B1C724F2D006B5C5E /* LapsappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2755A2641C724F2C006B5C5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Laps LLC";
+				TargetAttributes = {
+					2755A26B1C724F2C006B5C5E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					2755A27F1C724F2D006B5C5E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 2755A26B1C724F2C006B5C5E;
+					};
+					2755A28A1C724F2D006B5C5E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 2755A26B1C724F2C006B5C5E;
+					};
+				};
+			};
+			buildConfigurationList = 2755A2671C724F2C006B5C5E /* Build configuration list for PBXProject "Lapsapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2755A2631C724F2C006B5C5E;
+			productRefGroup = 2755A26D1C724F2C006B5C5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2755A26B1C724F2C006B5C5E /* Lapsapp */,
+				2755A27F1C724F2D006B5C5E /* LapsappTests */,
+				2755A28A1C724F2D006B5C5E /* LapsappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2755A26A1C724F2C006B5C5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2755A27A1C724F2C006B5C5E /* LaunchScreen.storyboard in Resources */,
+				2755A2771C724F2C006B5C5E /* Assets.xcassets in Resources */,
+				2755A2751C724F2C006B5C5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2755A27E1C724F2D006B5C5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2755A2891C724F2D006B5C5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2755A2681C724F2C006B5C5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2755A2721C724F2C006B5C5E /* ViewController.swift in Sources */,
+				2755A2701C724F2C006B5C5E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2755A27C1C724F2D006B5C5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2755A2851C724F2D006B5C5E /* LapsappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2755A2871C724F2D006B5C5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2755A2901C724F2D006B5C5E /* LapsappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2755A2821C724F2D006B5C5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2755A26B1C724F2C006B5C5E /* Lapsapp */;
+			targetProxy = 2755A2811C724F2D006B5C5E /* PBXContainerItemProxy */;
+		};
+		2755A28D1C724F2D006B5C5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2755A26B1C724F2C006B5C5E /* Lapsapp */;
+			targetProxy = 2755A28C1C724F2D006B5C5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2755A2731C724F2C006B5C5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2755A2741C724F2C006B5C5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2755A2781C724F2C006B5C5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2755A2791C724F2C006B5C5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2755A2921C724F2D006B5C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2755A2931C724F2D006B5C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2755A2951C724F2D006B5C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Lapsapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPS.Lapsapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2755A2961C724F2D006B5C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Lapsapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPS.Lapsapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2755A2981C724F2D006B5C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LapsappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPS.LapsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lapsapp.app/Lapsapp";
+			};
+			name = Debug;
+		};
+		2755A2991C724F2D006B5C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LapsappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPS.LapsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lapsapp.app/Lapsapp";
+			};
+			name = Release;
+		};
+		2755A29B1C724F2D006B5C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LapsappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPS.LapsappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Lapsapp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2755A29C1C724F2D006B5C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LapsappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPS.LapsappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Lapsapp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2755A2671C724F2C006B5C5E /* Build configuration list for PBXProject "Lapsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2755A2921C724F2D006B5C5E /* Debug */,
+				2755A2931C724F2D006B5C5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2755A2941C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Lapsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2755A2951C724F2D006B5C5E /* Debug */,
+				2755A2961C724F2D006B5C5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2755A2971C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2755A2981C724F2D006B5C5E /* Debug */,
+				2755A2991C724F2D006B5C5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2755A29A1C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2755A29B1C724F2D006B5C5E /* Debug */,
+				2755A29C1C724F2D006B5C5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2755A2641C724F2C006B5C5E /* Project object */;
+}
