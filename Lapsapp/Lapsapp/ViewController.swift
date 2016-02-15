@@ -7,6 +7,14 @@
 //
 
 import UIKit
+import Alamofire
+
+enum Route {
+    case North
+    case South
+    case East
+    case West
+}
 
 class ViewController: UIViewController {
 
@@ -19,7 +27,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        startApplication(.North)
+    }
+    
+    func startApplication(route: Route) {
+        if let url = NSURL(string: "http://www.example.com") {
+            debugPrint(url.absoluteString)
+        }
+    }
 }
 

@@ -14,6 +14,7 @@
 		2755A27A1C724F2C006B5C5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2755A2781C724F2C006B5C5E /* LaunchScreen.storyboard */; };
 		2755A2851C724F2D006B5C5E /* LapsappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755A2841C724F2D006B5C5E /* LapsappTests.swift */; };
 		2755A2901C724F2D006B5C5E /* LapsappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755A28F1C724F2D006B5C5E /* LapsappUITests.swift */; };
+		944A26055AC4E3FE8527F277 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1538ABC9524110F4EC29965F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1538ABC9524110F4EC29965F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2755A26C1C724F2C006B5C5E /* Lapsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lapsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2755A26F1C724F2C006B5C5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2755A2711C724F2C006B5C5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2755A2711C724F2C006B5C5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		2755A2741C724F2C006B5C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2755A2761C724F2C006B5C5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2755A2791C724F2C006B5C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		2755A28B1C724F2D006B5C5E /* LapsappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapsappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2755A28F1C724F2D006B5C5E /* LapsappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapsappUITests.swift; sourceTree = "<group>"; };
 		2755A2911C724F2D006B5C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72488608B77ADABF88F4E00E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D53975301D92A9C976A2AC1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944A26055AC4E3FE8527F277 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				2755A2831C724F2D006B5C5E /* LapsappTests */,
 				2755A28E1C724F2D006B5C5E /* LapsappUITests */,
 				2755A26D1C724F2C006B5C5E /* Products */,
+				C6FBA92068A8D91885CEEBB8 /* Pods */,
+				3BF046CFA4920BC612FB103D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = LapsappUITests;
 			sourceTree = "<group>";
 		};
+		3BF046CFA4920BC612FB103D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1538ABC9524110F4EC29965F /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6FBA92068A8D91885CEEBB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72488608B77ADABF88F4E00E /* Pods.debug.xcconfig */,
+				D53975301D92A9C976A2AC1A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2755A2941C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Lapsapp" */;
 			buildPhases = (
+				2FF7103B7F525FD2A29FAA42 /* Check Pods Manifest.lock */,
 				2755A2681C724F2C006B5C5E /* Sources */,
 				2755A2691C724F2C006B5C5E /* Frameworks */,
 				2755A26A1C724F2C006B5C5E /* Resources */,
+				CF6D78515ACC81A80CF482D4 /* Embed Pods Frameworks */,
+				77E3DB5D5161BFB70CCF063D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +276,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FF7103B7F525FD2A29FAA42 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77E3DB5D5161BFB70CCF063D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF6D78515ACC81A80CF482D4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2755A2681C724F2C006B5C5E /* Sources */ = {
@@ -394,6 +469,7 @@
 		};
 		2755A2951C724F2D006B5C5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72488608B77ADABF88F4E00E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lapsapp/Info.plist;
@@ -405,6 +481,7 @@
 		};
 		2755A2961C724F2D006B5C5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53975301D92A9C976A2AC1A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lapsapp/Info.plist;
@@ -481,6 +558,7 @@
 				2755A2961C724F2D006B5C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2755A2971C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +567,7 @@
 				2755A2991C724F2D006B5C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2755A29A1C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +576,7 @@
 				2755A29C1C724F2D006B5C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
