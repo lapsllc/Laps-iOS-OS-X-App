@@ -88,12 +88,18 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Bolts.framework"
   install_framework "Pods/FBSDKCoreKit.framework"
   install_framework "Pods/FBSDKLoginKit.framework"
+  install_framework "Pods/FontBlaster.framework"
+  install_framework "Pods/REFrostedViewController.framework"
   install_framework "Pods/SwiftyJSON.framework"
+  install_framework "Pods/VideoSplashKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
   install_framework "Pods/Bolts.framework"
   install_framework "Pods/FBSDKCoreKit.framework"
   install_framework "Pods/FBSDKLoginKit.framework"
+  install_framework "Pods/FontBlaster.framework"
+  install_framework "Pods/REFrostedViewController.framework"
   install_framework "Pods/SwiftyJSON.framework"
+  install_framework "Pods/VideoSplashKit.framework"
 fi

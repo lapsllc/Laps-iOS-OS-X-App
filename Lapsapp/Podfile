@@ -6,3 +6,6 @@ pod 'Alamofire', '~> 3.0'
 pod ‘SwiftyJSON’, ‘~> 2.3.2’
 pod ‘FBSDKCoreKit’, ‘~> 4.10.0’
 pod ‘FBSDKLoginKit’, ‘~> 4.10.0’
+pod 'REFrostedViewController', '~> 2.4'
+pod 'VideoSplashKit'
+pod 'FontBlaster'

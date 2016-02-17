@@ -10,19 +10,28 @@ PODS:
     - Bolts (~> 1.5)
   - FBSDKLoginKit (4.10.0):
     - FBSDKCoreKit
+  - FontBlaster (2.0.4)
+  - REFrostedViewController (2.4.8)
   - SwiftyJSON (2.3.2)
+  - VideoSplashKit (1.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - FBSDKCoreKit (~> 4.10.0)
   - FBSDKLoginKit (~> 4.10.0)
+  - FontBlaster
+  - REFrostedViewController (~> 2.4)
   - SwiftyJSON (~> 2.3.2)
+  - VideoSplashKit
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
   Bolts: f52a250053bb517ca874523c3913776359ab3def
   FBSDKCoreKit: 13bec8373fb3af94d44daf2aa1e0958687897fbd
   FBSDKLoginKit: d3d4a2e9d31954deb00bfea964167a05ca1ea976
+  FontBlaster: c34e4c00314f86b2256440d66b19adfceaefae1e
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  VideoSplashKit: 0aa63d0bb37c5bd357de3e6a2a13dea5acad4d66
 
 COCOAPODS: 0.39.0
