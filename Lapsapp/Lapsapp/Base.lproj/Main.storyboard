@@ -74,6 +74,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2F-Jh-2je">
+                                <rect key="frame" x="30" y="259" width="200" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GjJ-NS-oJl"/>
+                                    <constraint firstAttribute="width" constant="200" id="Sx5-uf-fLC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="eV8-NH-iCp">
                                 <rect key="frame" x="20" y="354" width="199" height="142"/>
                                 <constraints>
@@ -81,26 +92,19 @@
                                     <constraint firstAttribute="height" constant="142" id="dsZ-qq-hEg"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2F-Jh-2je">
-                                <rect key="frame" x="20" y="307" width="169" height="52"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="GjJ-NS-oJl"/>
-                                    <constraint firstAttribute="width" constant="169" id="Sx5-uf-fLC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JfV-C7-MM5" firstAttribute="top" secondItem="eV8-NH-iCp" secondAttribute="bottom" constant="104" id="1BZ-qa-YlL"/>
                             <constraint firstItem="eV8-NH-iCp" firstAttribute="top" secondItem="G2F-Jh-2je" secondAttribute="bottom" constant="-5" id="CJ1-sT-1QZ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="G2F-Jh-2je" secondAttribute="leading" id="YHi-vh-t6K"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="G2F-Jh-2je" secondAttribute="leading" constant="-10" id="YHi-vh-t6K"/>
                             <constraint firstItem="eV8-NH-iCp" firstAttribute="leading" secondItem="0vR-YW-cPj" secondAttribute="leading" constant="20" id="nfp-m9-hpj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="eV8-NH-iCp" id="u6X-va-PhN"/>
+                        <outlet property="welcomeLabel" destination="G2F-Jh-2je" id="T7R-u3-SC5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QoP-Fb-1pu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

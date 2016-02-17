@@ -24,6 +24,7 @@
 		27FB32E11C74F855003A0BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FB32E01C74F855003A0BF7 /* Assets.xcassets */; };
 		27FB32E51C74FBBE003A0BF7 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27FB32E41C74FB2E003A0BF7 /* test.mp4 */; };
 		27FB32F41C74FEFC003A0BF7 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 27FB32F31C74FEFC003A0BF7 /* Montserrat-Regular.otf */; };
+		27FB32F61C752D1F003A0BF7 /* test2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27FB32F51C752D1F003A0BF7 /* test2.mp4 */; };
 		944A26055AC4E3FE8527F277 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1538ABC9524110F4EC29965F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,7 @@
 		27FB32E01C74F855003A0BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27FB32E41C74FB2E003A0BF7 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		27FB32F31C74FEFC003A0BF7 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		27FB32F51C752D1F003A0BF7 /* test2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test2.mp4; sourceTree = "<group>"; };
 		72488608B77ADABF88F4E00E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D53975301D92A9C976A2AC1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 		2755A26E1C724F2C006B5C5E /* Lapsapp */ = {
 			isa = PBXGroup;
 			children = (
+				27FB32F51C752D1F003A0BF7 /* test2.mp4 */,
 				27FB32E41C74FB2E003A0BF7 /* test.mp4 */,
 				27FB32F31C74FEFC003A0BF7 /* Montserrat-Regular.otf */,
 				2755A26F1C724F2C006B5C5E /* AppDelegate.swift */,
@@ -450,6 +453,7 @@
 			files = (
 				27FB32DF1C74E264003A0BF7 /* SideMenuViewCell.xib in Resources */,
 				27FB32E51C74FBBE003A0BF7 /* test.mp4 in Resources */,
+				27FB32F61C752D1F003A0BF7 /* test2.mp4 in Resources */,
 				2755A27A1C724F2C006B5C5E /* LaunchScreen.storyboard in Resources */,
 				2755A2751C724F2C006B5C5E /* Main.storyboard in Resources */,
 				27DEA1691C74A19400737B06 /* BrandsCollectionViewCell.xib in Resources */,
