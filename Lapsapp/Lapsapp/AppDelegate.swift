@@ -21,8 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FontBlaster.blast()
         
 //        UINavigationBar.appearance().titleTextAttributes = [
-//            NSFontAttributeName: UIFont(name: "Arial", size: 20)!
+//            NSFontAttributeName: UIFont(name: "Arial", size: 21)!
 //        ]
+        
+        UINavigationBar.appearance().backgroundColor = UIColor.brownColor()
+        UINavigationBar.appearance().alpha = 1.0
         
         return true
     }

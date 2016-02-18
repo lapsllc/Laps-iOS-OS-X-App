@@ -3,25 +3,30 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BrandCell" id="gTV-IL-0wX" customClass="BrandsCollectionViewCell" customModule="Lapsapp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="413" height="162"/>
+            <rect key="frame" x="0.0" y="0.0" width="399" height="244"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="413" height="162"/>
+                <rect key="frame" x="0.0" y="0.0" width="399" height="244"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="0tp-RP-bjh">
-                        <rect key="frame" x="0.0" y="0.0" width="413" height="162"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Starbucks" translatesAutoresizingMaskIntoConstraints="NO" id="0tp-RP-bjh">
+                        <rect key="frame" x="0.0" y="0.0" width="399" height="244"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zek-g4-nre">
-                        <rect key="frame" x="0.0" y="138" width="413" height="24"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.20280827702702703" colorSpace="calibratedWhite"/>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zek-g4-nre">
+                        <rect key="frame" x="0.0" y="212" width="399" height="24"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.20000000000000001" alpha="0.097154771959459457" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="24" id="RZa-cY-HEk"/>
+                            <constraint firstAttribute="height" constant="24" id="tqO-pC-gjE"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -29,23 +34,23 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Zek-g4-nre" secondAttribute="bottom" id="375-bd-e0T"/>
-                <constraint firstItem="Zek-g4-nre" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C4O-W1-XKu"/>
-                <constraint firstAttribute="bottom" secondItem="0tp-RP-bjh" secondAttribute="bottom" id="HUq-Bc-yRT"/>
-                <constraint firstItem="0tp-RP-bjh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LYn-cB-d12"/>
-                <constraint firstAttribute="trailing" secondItem="Zek-g4-nre" secondAttribute="trailing" id="XXe-Sf-YlL"/>
-                <constraint firstAttribute="trailing" secondItem="0tp-RP-bjh" secondAttribute="trailing" id="YdN-Sr-yEs"/>
-                <constraint firstItem="0tp-RP-bjh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dli-lg-32R"/>
+                <constraint firstItem="Zek-g4-nre" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5mN-ah-cS0"/>
+                <constraint firstAttribute="bottom" secondItem="0tp-RP-bjh" secondAttribute="bottom" id="bcX-RT-GQk"/>
+                <constraint firstAttribute="trailing" secondItem="0tp-RP-bjh" secondAttribute="trailing" id="dKQ-Lw-oUA"/>
+                <constraint firstAttribute="bottom" secondItem="Zek-g4-nre" secondAttribute="bottom" constant="8" id="fuc-BM-pv7"/>
+                <constraint firstItem="0tp-RP-bjh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tdS-zX-Gyz"/>
+                <constraint firstItem="0tp-RP-bjh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vvv-kw-lv9"/>
+                <constraint firstAttribute="trailing" secondItem="Zek-g4-nre" secondAttribute="trailing" id="weF-vu-rOh"/>
             </constraints>
-            <size key="customSize" width="413" height="162"/>
+            <size key="customSize" width="399" height="244"/>
             <connections>
                 <outlet property="brandName" destination="Zek-g4-nre" id="n7j-oe-sVm"/>
                 <outlet property="brandThumbnail" destination="0tp-RP-bjh" id="ESF-tv-gTW"/>
             </connections>
-            <point key="canvasLocation" x="162.5" y="367"/>
+            <point key="canvasLocation" x="246.5" y="309"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="LoginBackground" width="750" height="1334"/>
+        <image name="Starbucks" width="512" height="384"/>
     </resources>
 </document>

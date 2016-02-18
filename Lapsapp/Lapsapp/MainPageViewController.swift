@@ -12,6 +12,8 @@ import REFrostedViewController
 
 class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLayout {
     
+
+    @IBOutlet var loginButton: UIButton!
     @IBOutlet var brandCollectionView: UICollectionView!
     
     let screenSize = UIScreen.mainScreen().bounds.size
@@ -23,7 +25,13 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
         
         brandCollectionView.registerNib(nibName, forCellWithReuseIdentifier: "BrandCell")
         
-        self.navigationItem.title = "laps!"
+        let logo = UIImage(named: "logo")
+        let logoImageView = UIImageView(image: logo)
+        logoImageView.frame.size = CGSize(width: 20, height: 40)
+        logoImageView.contentMode = UIViewContentMode.ScaleAspectFit
+        self.navigationItem.titleView = logoImageView
+        
+//        performSegueWithIdentifier("MainPageToLoginScreen", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,8 +46,6 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-         performSegueWithIdentifier("MainPageToLoginScreen", sender: nil)
 
     }
     
@@ -50,9 +56,9 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = brandCollectionView.dequeueReusableCellWithReuseIdentifier("BrandCell", forIndexPath: indexPath) as! BrandsCollectionViewCell
         
-        cell.layer.cornerRadius = 5.00
+        cell.layer.cornerRadius = 0.00
         
-        cell.brandName.text = "Starbucks"
+        cell.brandName.text = "  " + "Starbucks Coffee"
         
         return cell
     }
@@ -67,7 +73,7 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
 
-        return CGSizeMake(screenSize.width-10, screenSize.height/3.0)
+        return CGSizeMake(screenSize.width, screenSize.width*(1236.00/2048.00))
     }
     
     @IBAction func profileButtonClicked(sender: AnyObject) {
@@ -78,5 +84,8 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
         self.frostedViewController.presentMenuViewController()
     }
     
+    @IBAction func loginButtonClicked(sender: AnyObject) {
+        performSegueWithIdentifier("MainPageToLoginScreen", sender: nil)
+    }
 }
 

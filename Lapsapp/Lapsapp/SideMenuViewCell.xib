@@ -13,10 +13,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1i-Vg-GUu">
-                        <rect key="frame" x="4" y="0.0" width="316" height="43.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1i-Vg-GUu">
+                        <rect key="frame" x="8" y="0.0" width="312" height="43.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                         <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -25,7 +25,7 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="n1i-Vg-GUu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="IVb-Ex-J8Z"/>
+                    <constraint firstItem="n1i-Vg-GUu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IVb-Ex-J8Z"/>
                     <constraint firstAttribute="bottom" secondItem="n1i-Vg-GUu" secondAttribute="bottom" id="JGr-2F-d20"/>
                     <constraint firstAttribute="trailing" secondItem="n1i-Vg-GUu" secondAttribute="trailing" id="NJN-GN-VMX"/>
                     <constraint firstItem="n1i-Vg-GUu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PpA-wb-AfV"/>
