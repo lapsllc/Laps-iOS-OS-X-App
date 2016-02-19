@@ -101,16 +101,16 @@
 
 /* Begin PBXFileReference section */
 		1538ABC9524110F4EC29965F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2755A26C1C724F2C006B5C5E /* Lapsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lapsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2755A26C1C724F2C006B5C5E /* Laps iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Laps iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2755A26F1C724F2C006B5C5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2755A2711C724F2C006B5C5E /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		2755A2741C724F2C006B5C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2755A2791C724F2C006B5C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2755A27B1C724F2C006B5C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2755A2801C724F2D006B5C5E /* LapsappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapsappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2755A2801C724F2D006B5C5E /* Laps iOS App.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Laps iOS App.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2755A2841C724F2D006B5C5E /* LapsappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapsappTests.swift; sourceTree = "<group>"; };
 		2755A2861C724F2D006B5C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2755A28B1C724F2D006B5C5E /* LapsappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapsappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2755A28B1C724F2D006B5C5E /* Laps iOS App.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Laps iOS App.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2755A28F1C724F2D006B5C5E /* LapsappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapsappUITests.swift; sourceTree = "<group>"; };
 		2755A2911C724F2D006B5C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277139141C7285C0006D6E5E /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		2755A2631C724F2C006B5C5E = {
 			isa = PBXGroup;
 			children = (
-				2755A26E1C724F2C006B5C5E /* Lapsapp */,
+				2755A26E1C724F2C006B5C5E /* Laps iOS App */,
 				2755A2831C724F2D006B5C5E /* LapsappTests */,
 				2755A28E1C724F2D006B5C5E /* LapsappUITests */,
 				2755A26D1C724F2C006B5C5E /* Products */,
@@ -177,14 +177,14 @@
 		2755A26D1C724F2C006B5C5E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2755A26C1C724F2C006B5C5E /* Lapsapp.app */,
-				2755A2801C724F2D006B5C5E /* LapsappTests.xctest */,
-				2755A28B1C724F2D006B5C5E /* LapsappUITests.xctest */,
+				2755A26C1C724F2C006B5C5E /* Laps iOS App.app */,
+				2755A2801C724F2D006B5C5E /* Laps iOS App.xctest */,
+				2755A28B1C724F2D006B5C5E /* Laps iOS App.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2755A26E1C724F2C006B5C5E /* Lapsapp */ = {
+		2755A26E1C724F2C006B5C5E /* Laps iOS App */ = {
 			isa = PBXGroup;
 			children = (
 				2755A2731C724F2C006B5C5E /* Main.storyboard */,
@@ -195,6 +195,7 @@
 				27DEA1631C749F4D00737B06 /* Main Page */,
 				5A00D4051C77864D00A3F9F8 /* Supporting Files */,
 			);
+			name = "Laps iOS App";
 			path = Lapsapp;
 			sourceTree = "<group>";
 		};
@@ -331,9 +332,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2755A26B1C724F2C006B5C5E /* Lapsapp */ = {
+		2755A26B1C724F2C006B5C5E /* Laps iOS App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2755A2941C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Lapsapp" */;
+			buildConfigurationList = 2755A2941C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Laps iOS App" */;
 			buildPhases = (
 				2FF7103B7F525FD2A29FAA42 /* Check Pods Manifest.lock */,
 				2755A2681C724F2C006B5C5E /* Sources */,
@@ -346,14 +347,14 @@
 			);
 			dependencies = (
 			);
-			name = Lapsapp;
+			name = "Laps iOS App";
 			productName = Lapsapp;
-			productReference = 2755A26C1C724F2C006B5C5E /* Lapsapp.app */;
+			productReference = 2755A26C1C724F2C006B5C5E /* Laps iOS App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2755A27F1C724F2D006B5C5E /* LapsappTests */ = {
+		2755A27F1C724F2D006B5C5E /* Laps iOS AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2755A2971C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappTests" */;
+			buildConfigurationList = 2755A2971C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Laps iOS AppTests" */;
 			buildPhases = (
 				2755A27C1C724F2D006B5C5E /* Sources */,
 				2755A27D1C724F2D006B5C5E /* Frameworks */,
@@ -364,14 +365,14 @@
 			dependencies = (
 				2755A2821C724F2D006B5C5E /* PBXTargetDependency */,
 			);
-			name = LapsappTests;
+			name = "Laps iOS AppTests";
 			productName = LapsappTests;
-			productReference = 2755A2801C724F2D006B5C5E /* LapsappTests.xctest */;
+			productReference = 2755A2801C724F2D006B5C5E /* Laps iOS App.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2755A28A1C724F2D006B5C5E /* LapsappUITests */ = {
+		2755A28A1C724F2D006B5C5E /* Laps iOS AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2755A29A1C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappUITests" */;
+			buildConfigurationList = 2755A29A1C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Laps iOS AppUITests" */;
 			buildPhases = (
 				2755A2871C724F2D006B5C5E /* Sources */,
 				2755A2881C724F2D006B5C5E /* Frameworks */,
@@ -382,9 +383,9 @@
 			dependencies = (
 				2755A28D1C724F2D006B5C5E /* PBXTargetDependency */,
 			);
-			name = LapsappUITests;
+			name = "Laps iOS AppUITests";
 			productName = LapsappUITests;
-			productReference = 2755A28B1C724F2D006B5C5E /* LapsappUITests.xctest */;
+			productReference = 2755A28B1C724F2D006B5C5E /* Laps iOS App.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -410,7 +411,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2755A2671C724F2C006B5C5E /* Build configuration list for PBXProject "Lapsapp" */;
+			buildConfigurationList = 2755A2671C724F2C006B5C5E /* Build configuration list for PBXProject "Laps iOS App" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -429,9 +430,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				2755A26B1C724F2C006B5C5E /* Lapsapp */,
-				2755A27F1C724F2D006B5C5E /* LapsappTests */,
-				2755A28A1C724F2D006B5C5E /* LapsappUITests */,
+				2755A26B1C724F2C006B5C5E /* Laps iOS App */,
+				2755A27F1C724F2D006B5C5E /* Laps iOS AppTests */,
+				2755A28A1C724F2D006B5C5E /* Laps iOS AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -610,12 +611,12 @@
 /* Begin PBXTargetDependency section */
 		2755A2821C724F2D006B5C5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2755A26B1C724F2C006B5C5E /* Lapsapp */;
+			target = 2755A26B1C724F2C006B5C5E /* Laps iOS App */;
 			targetProxy = 2755A2811C724F2D006B5C5E /* PBXContainerItemProxy */;
 		};
 		2755A28D1C724F2D006B5C5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2755A26B1C724F2C006B5C5E /* Lapsapp */;
+			target = 2755A26B1C724F2C006B5C5E /* Laps iOS App */;
 			targetProxy = 2755A28C1C724F2D006B5C5E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -731,7 +732,7 @@
 				INFOPLIST_FILE = Lapsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.Lapsapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Laps iOS App";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Lapsapp/FacebookBridgingHeader.h;
 			};
@@ -747,7 +748,7 @@
 				INFOPLIST_FILE = Lapsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.Lapsapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Laps iOS App";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Lapsapp/FacebookBridgingHeader.h;
 			};
@@ -760,8 +761,8 @@
 				INFOPLIST_FILE = LapsappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.LapsappTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lapsapp.app/Lapsapp";
+				PRODUCT_NAME = "Laps iOS App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laps iOS App.app/Laps iOS App";
 			};
 			name = Debug;
 		};
@@ -772,8 +773,8 @@
 				INFOPLIST_FILE = LapsappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.LapsappTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lapsapp.app/Lapsapp";
+				PRODUCT_NAME = "Laps iOS App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laps iOS App.app/Laps iOS App";
 			};
 			name = Release;
 		};
@@ -783,7 +784,7 @@
 				INFOPLIST_FILE = LapsappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.LapsappUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Laps iOS App";
 				TEST_TARGET_NAME = Lapsapp;
 				USES_XCTRUNNER = YES;
 			};
@@ -795,7 +796,7 @@
 				INFOPLIST_FILE = LapsappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.LapsappUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Laps iOS App";
 				TEST_TARGET_NAME = Lapsapp;
 				USES_XCTRUNNER = YES;
 			};
@@ -804,7 +805,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2755A2671C724F2C006B5C5E /* Build configuration list for PBXProject "Lapsapp" */ = {
+		2755A2671C724F2C006B5C5E /* Build configuration list for PBXProject "Laps iOS App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2755A2921C724F2D006B5C5E /* Debug */,
@@ -813,7 +814,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2755A2941C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Lapsapp" */ = {
+		2755A2941C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Laps iOS App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2755A2951C724F2D006B5C5E /* Debug */,
@@ -822,7 +823,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2755A2971C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappTests" */ = {
+		2755A2971C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Laps iOS AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2755A2981C724F2D006B5C5E /* Debug */,
@@ -831,7 +832,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2755A29A1C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "LapsappUITests" */ = {
+		2755A29A1C724F2D006B5C5E /* Build configuration list for PBXNativeTarget "Laps iOS AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2755A29B1C724F2D006B5C5E /* Debug */,

@@ -85,7 +85,7 @@ class LoginScreenViewController : VideoSplashViewController {
         NSLog("TAPPED BRUH")
     }
     
-    @IBAction func closeButton(sender: AnyObject) {
+    @IBAction func closeButtonClicked(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
