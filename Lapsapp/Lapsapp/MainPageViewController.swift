@@ -31,7 +31,7 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
         logoImageView.contentMode = UIViewContentMode.ScaleAspectFit
         self.navigationItem.titleView = logoImageView
         
-//        performSegueWithIdentifier("MainPageToLoginScreen", sender: nil)
+        performSegueWithIdentifier("MainPageToLoginScreen", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {

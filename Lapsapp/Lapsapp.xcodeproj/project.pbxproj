@@ -114,6 +114,7 @@
 		27DBE17A1C75C72A00BF2482 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		27DBE17C1C75D23000BF2482 /* SideMenuTableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuTableHeader.xib; sourceTree = "<group>"; };
 		27DBE17E1C75D39800BF2482 /* SideMenuTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableHeader.swift; sourceTree = "<group>"; };
+		27DBE1801C775BA700BF2482 /* FacebookBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookBridgingHeader.h; sourceTree = "<group>"; };
 		27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LapsSDK.xcodeproj; path = "../../Laps-Cocoa-SDK/LapsSDK.xcodeproj"; sourceTree = "<group>"; };
 		27DEA1361C7496E400737B06 /* FrostedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		27DEA1421C74995100737B06 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
@@ -193,6 +194,7 @@
 				2755A2781C724F2C006B5C5E /* LaunchScreen.storyboard */,
 				27FB32E01C74F855003A0BF7 /* Assets.xcassets */,
 				2755A27B1C724F2C006B5C5E /* Info.plist */,
+				27DBE1801C775BA700BF2482 /* FacebookBridgingHeader.h */,
 			);
 			path = Lapsapp;
 			sourceTree = "<group>";
@@ -691,6 +693,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.Lapsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Lapsapp/FacebookBridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -703,6 +706,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.Lapsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Lapsapp/FacebookBridgingHeader.h;
 			};
 			name = Release;
 		};
