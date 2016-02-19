@@ -27,6 +27,9 @@
 		27FB32E11C74F855003A0BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FB32E01C74F855003A0BF7 /* Assets.xcassets */; };
 		27FB32E51C74FBBE003A0BF7 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27FB32E41C74FB2E003A0BF7 /* test.mp4 */; };
 		27FB32F61C752D1F003A0BF7 /* test2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27FB32F51C752D1F003A0BF7 /* test2.mp4 */; };
+		5A00D4011C77862B00A3F9F8 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A00D3FE1C77862B00A3F9F8 /* Montserrat-Black.otf */; };
+		5A00D4021C77862B00A3F9F8 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A00D3FF1C77862B00A3F9F8 /* Montserrat-Bold.otf */; };
+		5A00D4031C77862B00A3F9F8 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A00D4001C77862B00A3F9F8 /* Montserrat-Hairline.otf */; };
 		944A26055AC4E3FE8527F277 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1538ABC9524110F4EC29965F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +129,9 @@
 		27FB32E01C74F855003A0BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27FB32E41C74FB2E003A0BF7 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		27FB32F51C752D1F003A0BF7 /* test2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test2.mp4; sourceTree = "<group>"; };
+		5A00D3FE1C77862B00A3F9F8 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		5A00D3FF1C77862B00A3F9F8 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		5A00D4001C77862B00A3F9F8 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
 		72488608B77ADABF88F4E00E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D53975301D92A9C976A2AC1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,20 +187,13 @@
 		2755A26E1C724F2C006B5C5E /* Lapsapp */ = {
 			isa = PBXGroup;
 			children = (
-				27DBE17A1C75C72A00BF2482 /* Montserrat-Light.otf */,
-				27FB32F51C752D1F003A0BF7 /* test2.mp4 */,
-				27FB32E41C74FB2E003A0BF7 /* test.mp4 */,
-				2755A26F1C724F2C006B5C5E /* AppDelegate.swift */,
+				2755A2731C724F2C006B5C5E /* Main.storyboard */,
 				27DEA1451C7499C600737B06 /* Login Screen */,
 				27DEA1441C7499AE00737B06 /* Frosted View Controller */,
 				27DEA13F1C7498F900737B06 /* Base Navigation Controller */,
 				27DEA1481C749CDF00737B06 /* Side Menu */,
 				27DEA1631C749F4D00737B06 /* Main Page */,
-				2755A2731C724F2C006B5C5E /* Main.storyboard */,
-				2755A2781C724F2C006B5C5E /* LaunchScreen.storyboard */,
-				27FB32E01C74F855003A0BF7 /* Assets.xcassets */,
-				2755A27B1C724F2C006B5C5E /* Info.plist */,
-				27DBE1801C775BA700BF2482 /* FacebookBridgingHeader.h */,
+				5A00D4051C77864D00A3F9F8 /* Supporting Files */,
 			);
 			path = Lapsapp;
 			sourceTree = "<group>";
@@ -286,6 +285,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5A00D4041C77863400A3F9F8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				27DBE17A1C75C72A00BF2482 /* Montserrat-Light.otf */,
+				5A00D3FE1C77862B00A3F9F8 /* Montserrat-Black.otf */,
+				5A00D3FF1C77862B00A3F9F8 /* Montserrat-Bold.otf */,
+				5A00D4001C77862B00A3F9F8 /* Montserrat-Hairline.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		5A00D4051C77864D00A3F9F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A00D4041C77863400A3F9F8 /* Fonts */,
+				5A00D4061C77875500A3F9F8 /* Objects */,
+				2755A26F1C724F2C006B5C5E /* AppDelegate.swift */,
+				2755A2781C724F2C006B5C5E /* LaunchScreen.storyboard */,
+				27FB32E01C74F855003A0BF7 /* Assets.xcassets */,
+				2755A27B1C724F2C006B5C5E /* Info.plist */,
+				27DBE1801C775BA700BF2482 /* FacebookBridgingHeader.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A00D4061C77875500A3F9F8 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				27FB32F51C752D1F003A0BF7 /* test2.mp4 */,
+				27FB32E41C74FB2E003A0BF7 /* test.mp4 */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 		C6FBA92068A8D91885CEEBB8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +398,7 @@
 				TargetAttributes = {
 					2755A26B1C724F2C006B5C5E = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = DHCR3H4M55;
 					};
 					2755A27F1C724F2D006B5C5E = {
 						CreatedOnToolsVersion = 7.0;
@@ -465,9 +499,12 @@
 				27FB32F61C752D1F003A0BF7 /* test2.mp4 in Resources */,
 				2755A27A1C724F2C006B5C5E /* LaunchScreen.storyboard in Resources */,
 				2755A2751C724F2C006B5C5E /* Main.storyboard in Resources */,
+				5A00D4031C77862B00A3F9F8 /* Montserrat-Hairline.otf in Resources */,
+				5A00D4011C77862B00A3F9F8 /* Montserrat-Black.otf in Resources */,
 				27DEA1691C74A19400737B06 /* BrandsCollectionViewCell.xib in Resources */,
 				27FB32E11C74F855003A0BF7 /* Assets.xcassets in Resources */,
 				27DBE17B1C75C72A00BF2482 /* Montserrat-Light.otf in Resources */,
+				5A00D4021C77862B00A3F9F8 /* Montserrat-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,10 +726,13 @@
 			baseConfigurationReference = 72488608B77ADABF88F4E00E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Lapsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.Lapsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Lapsapp/FacebookBridgingHeader.h;
 			};
 			name = Debug;
@@ -702,10 +742,13 @@
 			baseConfigurationReference = D53975301D92A9C976A2AC1A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Lapsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LPS.Lapsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Lapsapp/FacebookBridgingHeader.h;
 			};
 			name = Release;
