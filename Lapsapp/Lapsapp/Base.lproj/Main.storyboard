@@ -13,7 +13,7 @@
         <!--Main Page View Controller-->
         <scene sceneID="BGY-xu-jA4">
             <objects>
-                <viewController id="5tD-sn-Ft0" customClass="MainPageViewController" customModule="Lapsapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5tD-sn-Ft0" customClass="MainPageViewController" customModule="Laps_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5hP-qF-lDq"/>
                         <viewControllerLayoutGuide type="bottom" id="8ph-nP-rgr"/>
@@ -86,16 +86,61 @@
                         <outlet property="brandCollectionView" destination="5lG-lI-XHM" id="BX7-YW-PXy"/>
                         <outlet property="loginButton" destination="Xa7-Jv-bpQ" id="gix-lk-TUC"/>
                         <segue destination="TND-Nc-baa" kind="presentation" identifier="MainPageToLoginScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Qye-dy-4CM"/>
+                        <segue destination="jn1-b1-x3I" kind="show" identifier="MainPageToProductPage" id="Rrd-4H-AKf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbg-w6-ORB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1054" y="543"/>
         </scene>
+        <!--Product View Controller-->
+        <scene sceneID="9vW-uS-M1a">
+            <objects>
+                <viewController id="jn1-b1-x3I" customClass="ProductViewController" customModule="Laps_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0aU-5H-NZf"/>
+                        <viewControllerLayoutGuide type="bottom" id="sFW-LZ-fWP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TPu-AA-h7q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AcG-4b-mdh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Si6-KD-Z9f">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jn1-b1-x3I" id="zVK-rf-QDd"/>
+                                    <outlet property="delegate" destination="jn1-b1-x3I" id="VuH-7S-Efi"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AcG-4b-mdh" firstAttribute="top" secondItem="TPu-AA-h7q" secondAttribute="topMargin" id="4so-fR-Zx8"/>
+                            <constraint firstAttribute="trailing" secondItem="AcG-4b-mdh" secondAttribute="trailing" id="5TX-nW-Rub"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="AcG-4b-mdh" secondAttribute="bottom" id="oqm-ie-hN3"/>
+                            <constraint firstItem="AcG-4b-mdh" firstAttribute="leading" secondItem="TPu-AA-h7q" secondAttribute="leading" id="ybC-2D-1y1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="productsCollectionView" destination="AcG-4b-mdh" id="P9d-XQ-Vug"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GWz-MD-wyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="543"/>
+        </scene>
         <!--LoginViewController-->
         <scene sceneID="Mkg-5D-tMk">
             <objects>
-                <viewController storyboardIdentifier="LoginScreen" title="LoginViewController" id="TND-Nc-baa" customClass="LoginScreenViewController" customModule="Lapsapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScreen" title="LoginViewController" id="TND-Nc-baa" customClass="LoginScreenViewController" customModule="Laps_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FW5-Up-fGP"/>
                         <viewControllerLayoutGuide type="bottom" id="JfV-C7-MM5"/>
@@ -156,7 +201,7 @@
         <!--Frosted View Controller-->
         <scene sceneID="pf9-tI-aX9">
             <objects>
-                <viewController storyboardIdentifier="FrostedViewController" id="30c-rQ-VVX" customClass="FrostedViewController" customModule="Lapsapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FrostedViewController" id="30c-rQ-VVX" customClass="FrostedViewController" customModule="Laps_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eE6-Mi-t0C"/>
                         <viewControllerLayoutGuide type="bottom" id="xeW-Pf-tjX"/>
@@ -174,7 +219,7 @@
         <!--Side Menu View Controller-->
         <scene sceneID="PL0-xj-Tk4">
             <objects>
-                <viewController storyboardIdentifier="SideMenuViewController" id="XAw-wb-yGM" customClass="SideMenuViewController" customModule="Lapsapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SideMenuViewController" id="XAw-wb-yGM" customClass="SideMenuViewController" customModule="Laps_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZPW-a9-MQ3"/>
                         <viewControllerLayoutGuide type="bottom" id="wIK-2e-drR"/>
@@ -215,7 +260,7 @@
         <!--Base Navigation Controller-->
         <scene sceneID="v1N-M9-fmR">
             <objects>
-                <navigationController storyboardIdentifier="BaseNavigationController" id="Enl-J6-BLq" customClass="BaseNavigationController" customModule="Lapsapp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BaseNavigationController" id="Enl-J6-BLq" customClass="BaseNavigationController" customModule="Laps_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Puy-Iw-83U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

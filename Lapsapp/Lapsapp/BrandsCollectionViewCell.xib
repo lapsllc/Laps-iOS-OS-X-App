@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BrandCell" id="gTV-IL-0wX" customClass="BrandsCollectionViewCell" customModule="Lapsapp" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BrandCell" id="gTV-IL-0wX" customClass="BrandsCollectionViewCell" customModule="Laps_iOS_App" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="399" height="244"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -22,7 +22,7 @@
                     </imageView>
                     <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zek-g4-nre">
                         <rect key="frame" x="0.0" y="212" width="399" height="24"/>
-                        <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.20000000000000001" alpha="0.097154771959459457" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.1994826858108108" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="tqO-pC-gjE"/>
                         </constraints>

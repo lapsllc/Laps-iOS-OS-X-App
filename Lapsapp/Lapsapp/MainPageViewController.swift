@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Foundation
 import REFrostedViewController
 
 class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLayout {
@@ -65,6 +64,8 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        performSegueWithIdentifier("MainPageToProductPage", sender: nil)
+        
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -74,6 +75,16 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
 
         return CGSizeMake(screenSize.width, screenSize.width*(1236.00/2048.00))
+    }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if(segue.destinationViewController.isKindOfClass(ProductViewController))
+        {
+//            let vc : ProductViewController = segue.destinationViewController
+//            TODO / send brand
+        }
     }
     
     @IBAction func profileButtonClicked(sender: AnyObject) {

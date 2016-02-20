@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2746A7A71C78EC1600197C65 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2746A7A61C78EC1600197C65 /* ProductViewController.swift */; };
+		2746A7AA1C78ED0100197C65 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2746A7A81C78ED0100197C65 /* ProductCollectionViewCell.swift */; };
+		2746A7AB1C78ED0100197C65 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2746A7A91C78ED0100197C65 /* ProductCollectionViewCell.xib */; };
+		2746A7C61C78F40F00197C65 /* LapsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2746A7B91C78F3FF00197C65 /* LapsKit.framework */; };
 		2755A2701C724F2C006B5C5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755A26F1C724F2C006B5C5E /* AppDelegate.swift */; };
 		2755A2721C724F2C006B5C5E /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755A2711C724F2C006B5C5E /* MainPageViewController.swift */; };
 		2755A2751C724F2C006B5C5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2755A2731C724F2C006B5C5E /* Main.storyboard */; };
@@ -34,6 +38,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2746A7B81C78F3FF00197C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F74E61C74956300472CF1;
+			remoteInfo = "LapsKit iOS";
+		};
+		2746A7BA1C78F3FF00197C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F74F01C74956300472CF1;
+			remoteInfo = "LapsKit iOS Tests";
+		};
+		2746A7BC1C78F3FF00197C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F75051C74957B00472CF1;
+			remoteInfo = "LapsKit OS X";
+		};
+		2746A7BE1C78F3FF00197C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F750E1C74957B00472CF1;
+			remoteInfo = "LapsKit OS X Tests";
+		};
+		2746A7C01C78F3FF00197C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F752E1C7495C900472CF1;
+			remoteInfo = "LapsKit tvOS";
+		};
+		2746A7C21C78F3FF00197C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F75371C7495C900472CF1;
+			remoteInfo = "LapsKit tvOSTests";
+		};
+		2746A7C41C78F3FF00197C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F75211C7495AB00472CF1;
+			remoteInfo = "LapsKit watchOS";
+		};
 		2755A2811C724F2D006B5C5E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2755A2641C724F2C006B5C5E /* Project object */;
@@ -48,59 +101,14 @@
 			remoteGlobalIDString = 2755A26B1C724F2C006B5C5E;
 			remoteInfo = Lapsapp;
 		};
-		27DEA1271C747E5200737B06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27298B031C724097004CFEF2;
-			remoteInfo = "LapsSDK iOS";
-		};
-		27DEA1291C747E5200737B06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27298B0D1C724097004CFEF2;
-			remoteInfo = "LapsSDK iOS Tests";
-		};
-		27DEA12B1C747E5200737B06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5AF5B70C1C73A6E200266FB9;
-			remoteInfo = "LapsSDK tvOS";
-		};
-		27DEA12D1C747E5200737B06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5AF5B7151C73A6E200266FB9;
-			remoteInfo = "LapsSDK tvOS Tests";
-		};
-		27DEA12F1C747E5200737B06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5AF5B7281C73A6F700266FB9;
-			remoteInfo = "LapsSDK OS X";
-		};
-		27DEA1311C747E5200737B06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5AF5B7311C73A6F800266FB9;
-			remoteInfo = "LapsSDK OS X Tests";
-		};
-		27DEA1331C747E5200737B06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5AF5B6FF1C73A6CB00266FB9;
-			remoteInfo = "LapsSDK watchOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1538ABC9524110F4EC29965F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2746A7A61C78EC1600197C65 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		2746A7A81C78ED0100197C65 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		2746A7A91C78ED0100197C65 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LapsKit.xcodeproj; path = "../../../../Laps-Cocoa-SDK/LapsKit.xcodeproj"; sourceTree = "<group>"; };
 		2755A26C1C724F2C006B5C5E /* Laps iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Laps iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2755A26F1C724F2C006B5C5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2755A2711C724F2C006B5C5E /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
@@ -118,7 +126,6 @@
 		27DBE17C1C75D23000BF2482 /* SideMenuTableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuTableHeader.xib; sourceTree = "<group>"; };
 		27DBE17E1C75D39800BF2482 /* SideMenuTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableHeader.swift; sourceTree = "<group>"; };
 		27DBE1801C775BA700BF2482 /* FacebookBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookBridgingHeader.h; sourceTree = "<group>"; };
-		27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LapsSDK.xcodeproj; path = "../../Laps-Cocoa-SDK/LapsSDK.xcodeproj"; sourceTree = "<group>"; };
 		27DEA1361C7496E400737B06 /* FrostedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		27DEA1421C74995100737B06 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		27DEA1461C749C6C00737B06 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
@@ -141,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2746A7C61C78F40F00197C65 /* LapsKit.framework in Frameworks */,
 				944A26055AC4E3FE8527F277 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +170,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2746A7A31C78EB6D00197C65 /* Products page */ = {
+			isa = PBXGroup;
+			children = (
+				2746A7A61C78EC1600197C65 /* ProductViewController.swift */,
+				2746A7A81C78ED0100197C65 /* ProductCollectionViewCell.swift */,
+				2746A7A91C78ED0100197C65 /* ProductCollectionViewCell.xib */,
+			);
+			name = "Products page";
+			sourceTree = "<group>";
+		};
+		2746A7AD1C78F3FF00197C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2746A7B91C78F3FF00197C65 /* LapsKit.framework */,
+				2746A7BB1C78F3FF00197C65 /* LapsKitTests.xctest */,
+				2746A7BD1C78F3FF00197C65 /* LapsKit.framework */,
+				2746A7BF1C78F3FF00197C65 /* LapsKitTests.xctest */,
+				2746A7C11C78F3FF00197C65 /* LapsKit.framework */,
+				2746A7C31C78F3FF00197C65 /* LapsKitTests.xctest */,
+				2746A7C51C78F3FF00197C65 /* LapsKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2755A2631C724F2C006B5C5E = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +224,7 @@
 				27DEA1441C7499AE00737B06 /* Frosted View Controller */,
 				27DEA13F1C7498F900737B06 /* Base Navigation Controller */,
 				27DEA1481C749CDF00737B06 /* Side Menu */,
+				2746A7A31C78EB6D00197C65 /* Products page */,
 				27DEA1631C749F4D00737B06 /* Main Page */,
 				5A00D4051C77864D00A3F9F8 /* Supporting Files */,
 			);
@@ -215,20 +248,6 @@
 				2755A2911C724F2D006B5C5E /* Info.plist */,
 			);
 			path = LapsappUITests;
-			sourceTree = "<group>";
-		};
-		27DEA11E1C747E5200737B06 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				27DEA1281C747E5200737B06 /* LapsSDK.framework */,
-				27DEA12A1C747E5200737B06 /* LapsSDK iOS.xctest */,
-				27DEA12C1C747E5200737B06 /* LapsSDK.framework */,
-				27DEA12E1C747E5200737B06 /* LapsSDK iOS.xctest */,
-				27DEA1301C747E5200737B06 /* LapsSDK.framework */,
-				27DEA1321C747E5200737B06 /* LapsSDK iOS.xctest */,
-				27DEA1341C747E5200737B06 /* LapsSDK.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		27DEA13F1C7498F900737B06 /* Base Navigation Controller */ = {
@@ -280,7 +299,7 @@
 		3BF046CFA4920BC612FB103D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */,
+				2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */,
 				1538ABC9524110F4EC29965F /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -424,8 +443,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 27DEA11E1C747E5200737B06 /* Products */;
-					ProjectRef = 27DEA11D1C747E5200737B06 /* LapsSDK.xcodeproj */;
+					ProductGroup = 2746A7AD1C78F3FF00197C65 /* Products */;
+					ProjectRef = 2746A7AC1C78F3FF00197C65 /* LapsKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -438,53 +457,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		27DEA1281C747E5200737B06 /* LapsSDK.framework */ = {
+		2746A7B91C78F3FF00197C65 /* LapsKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = LapsSDK.framework;
-			remoteRef = 27DEA1271C747E5200737B06 /* PBXContainerItemProxy */;
+			path = LapsKit.framework;
+			remoteRef = 2746A7B81C78F3FF00197C65 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DEA12A1C747E5200737B06 /* LapsSDK iOS.xctest */ = {
+		2746A7BB1C78F3FF00197C65 /* LapsKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "LapsSDK iOS.xctest";
-			remoteRef = 27DEA1291C747E5200737B06 /* PBXContainerItemProxy */;
+			path = LapsKitTests.xctest;
+			remoteRef = 2746A7BA1C78F3FF00197C65 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DEA12C1C747E5200737B06 /* LapsSDK.framework */ = {
+		2746A7BD1C78F3FF00197C65 /* LapsKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = LapsSDK.framework;
-			remoteRef = 27DEA12B1C747E5200737B06 /* PBXContainerItemProxy */;
+			path = LapsKit.framework;
+			remoteRef = 2746A7BC1C78F3FF00197C65 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DEA12E1C747E5200737B06 /* LapsSDK iOS.xctest */ = {
+		2746A7BF1C78F3FF00197C65 /* LapsKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "LapsSDK iOS.xctest";
-			remoteRef = 27DEA12D1C747E5200737B06 /* PBXContainerItemProxy */;
+			path = LapsKitTests.xctest;
+			remoteRef = 2746A7BE1C78F3FF00197C65 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DEA1301C747E5200737B06 /* LapsSDK.framework */ = {
+		2746A7C11C78F3FF00197C65 /* LapsKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = LapsSDK.framework;
-			remoteRef = 27DEA12F1C747E5200737B06 /* PBXContainerItemProxy */;
+			path = LapsKit.framework;
+			remoteRef = 2746A7C01C78F3FF00197C65 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DEA1321C747E5200737B06 /* LapsSDK iOS.xctest */ = {
+		2746A7C31C78F3FF00197C65 /* LapsKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "LapsSDK iOS.xctest";
-			remoteRef = 27DEA1311C747E5200737B06 /* PBXContainerItemProxy */;
+			path = LapsKitTests.xctest;
+			remoteRef = 2746A7C21C78F3FF00197C65 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27DEA1341C747E5200737B06 /* LapsSDK.framework */ = {
+		2746A7C51C78F3FF00197C65 /* LapsKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = LapsSDK.framework;
-			remoteRef = 27DEA1331C747E5200737B06 /* PBXContainerItemProxy */;
+			path = LapsKit.framework;
+			remoteRef = 2746A7C41C78F3FF00197C65 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -498,6 +517,7 @@
 				27FB32E51C74FBBE003A0BF7 /* test.mp4 in Resources */,
 				27DBE17D1C75D23000BF2482 /* SideMenuTableHeader.xib in Resources */,
 				27FB32F61C752D1F003A0BF7 /* test2.mp4 in Resources */,
+				2746A7AB1C78ED0100197C65 /* ProductCollectionViewCell.xib in Resources */,
 				2755A27A1C724F2C006B5C5E /* LaunchScreen.storyboard in Resources */,
 				2755A2751C724F2C006B5C5E /* Main.storyboard in Resources */,
 				5A00D4031C77862B00A3F9F8 /* Montserrat-Hairline.otf in Resources */,
@@ -580,12 +600,14 @@
 			files = (
 				27DEA1371C7496E400737B06 /* FrostedViewController.swift in Sources */,
 				2755A2721C724F2C006B5C5E /* MainPageViewController.swift in Sources */,
+				2746A7AA1C78ED0100197C65 /* ProductCollectionViewCell.swift in Sources */,
 				2755A2701C724F2C006B5C5E /* AppDelegate.swift in Sources */,
 				27DEA1681C74A19400737B06 /* BrandsCollectionViewCell.swift in Sources */,
 				27DBE17F1C75D39800BF2482 /* SideMenuTableHeader.swift in Sources */,
 				27DEA1471C749C6C00737B06 /* SideMenuViewController.swift in Sources */,
 				27DEA1431C74995100737B06 /* BaseNavigationController.swift in Sources */,
 				27FB32DE1C74E264003A0BF7 /* SideMenuViewCell.swift in Sources */,
+				2746A7A71C78EC1600197C65 /* ProductViewController.swift in Sources */,
 				277139151C7285C1006D6E5E /* LoginScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
