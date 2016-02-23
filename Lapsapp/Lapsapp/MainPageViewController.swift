@@ -55,8 +55,6 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = brandCollectionView.dequeueReusableCellWithReuseIdentifier("BrandCell", forIndexPath: indexPath) as! BrandsCollectionViewCell
         
-        cell.layer.cornerRadius = 0.00
-        
         cell.brandName.text = "  " + "Starbucks Coffee"
         
         return cell

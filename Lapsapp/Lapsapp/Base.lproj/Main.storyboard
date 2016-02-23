@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="30c-rQ-VVX">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -150,25 +151,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2F-Jh-2je">
-                                <rect key="frame" x="30" y="259" width="200" height="100"/>
+                                <rect key="frame" x="30" y="308" width="200" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="GjJ-NS-oJl"/>
                                     <constraint firstAttribute="width" constant="200" id="Sx5-uf-fLC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="31"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="eV8-NH-iCp">
-                                <rect key="frame" x="20" y="354" width="199" height="142"/>
+                                <rect key="frame" x="20" y="398" width="199" height="142"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="45G-LG-RVb"/>
                                     <constraint firstAttribute="height" constant="142" id="dsZ-qq-hEg"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGl-kJ-gH4">
-                                <rect key="frame" x="285" y="20" width="30" height="30"/>
+                                <rect key="frame" x="285" y="30" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="FOz-DR-g68"/>
                                     <constraint firstAttribute="height" constant="30" id="TA6-24-DgB"/>
@@ -178,18 +179,32 @@
                                     <action selector="closeButtonClicked:" destination="TND-Nc-baa" eventType="touchUpInside" id="pYv-r3-uHl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4H-E0-hZY">
+                                <rect key="frame" x="180" y="480" width="240" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3BM-TG-flp"/>
+                                    <constraint firstAttribute="width" constant="240" id="vRK-qd-Bk1"/>
+                                </constraints>
+                                <state key="normal" image="FacebookConnect"/>
+                                <connections>
+                                    <action selector="facebookLoginButtonClicked:" destination="TND-Nc-baa" eventType="touchUpInside" id="hXw-Yr-bsn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JfV-C7-MM5" firstAttribute="top" secondItem="eV8-NH-iCp" secondAttribute="bottom" constant="104" id="1BZ-qa-YlL"/>
-                            <constraint firstItem="eV8-NH-iCp" firstAttribute="top" secondItem="G2F-Jh-2je" secondAttribute="bottom" constant="-5" id="CJ1-sT-1QZ"/>
+                            <constraint firstItem="JfV-C7-MM5" firstAttribute="top" secondItem="eV8-NH-iCp" secondAttribute="bottom" constant="60" id="1BZ-qa-YlL"/>
+                            <constraint firstItem="U4H-E0-hZY" firstAttribute="centerX" secondItem="0vR-YW-cPj" secondAttribute="centerX" id="3qU-X3-Txy"/>
+                            <constraint firstItem="eV8-NH-iCp" firstAttribute="top" secondItem="G2F-Jh-2je" secondAttribute="bottom" constant="-10" id="CJ1-sT-1QZ"/>
                             <constraint firstItem="tGl-kJ-gH4" firstAttribute="centerX" secondItem="0vR-YW-cPj" secondAttribute="centerX" id="Y03-3P-AZh"/>
                             <constraint firstAttribute="leadingMargin" secondItem="G2F-Jh-2je" secondAttribute="leading" constant="-10" id="YHi-vh-t6K"/>
+                            <constraint firstItem="JfV-C7-MM5" firstAttribute="top" secondItem="U4H-E0-hZY" secondAttribute="bottom" constant="60" id="agr-WF-NOw"/>
                             <constraint firstItem="eV8-NH-iCp" firstAttribute="leading" secondItem="0vR-YW-cPj" secondAttribute="leading" constant="20" id="nfp-m9-hpj"/>
-                            <constraint firstItem="tGl-kJ-gH4" firstAttribute="top" secondItem="FW5-Up-fGP" secondAttribute="bottom" id="vc5-fD-PAe"/>
+                            <constraint firstItem="tGl-kJ-gH4" firstAttribute="top" secondItem="FW5-Up-fGP" secondAttribute="bottom" constant="10" id="vc5-fD-PAe"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="facebookLoginButton" destination="U4H-E0-hZY" id="mXg-YA-w1b"/>
                         <outlet property="logoImageView" destination="eV8-NH-iCp" id="u6X-va-PhN"/>
                         <outlet property="welcomeLabel" destination="G2F-Jh-2je" id="T7R-u3-SC5"/>
                     </connections>
@@ -275,6 +290,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FacebookConnect" width="575" height="150"/>
         <image name="Profile" width="48" height="48"/>
         <image name="close_button_red" width="50" height="50"/>
         <image name="logo" width="842" height="596"/>

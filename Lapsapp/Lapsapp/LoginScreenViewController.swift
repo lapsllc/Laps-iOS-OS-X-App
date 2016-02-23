@@ -7,17 +7,22 @@
 //
 
 import VideoSplashKit
+import FBSDKLoginKit
+import FBSDKCoreKit
+import LapsKit
 
-class LoginScreenViewController : VideoSplashViewController {
+class LoginScreenViewController : VideoSplashViewController, AuthenticationSessionDelegate {
     
     @IBOutlet var logoImageView: UIImageView!
     @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var facebookLoginButton: UIButton!
     
     var swipeLeft : UISwipeGestureRecognizer?
     var swipeRight : UISwipeGestureRecognizer?
     var swipeDown : UISwipeGestureRecognizer?
     var swipeUp : UISwipeGestureRecognizer?
     var tap : UITapGestureRecognizer?
+    let authenticationSession = LapsKit.AuthenticationSession()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +37,8 @@ class LoginScreenViewController : VideoSplashViewController {
         self.backgroundColor = UIColor.blackColor()
         self.contentURL = url
         self.restartForeground = true
+        
+        facebookLoginButton.alpha = 0.00
         
         swipeLeft = UISwipeGestureRecognizer(target: self, action: Selector("swiped"))
         swipeLeft!.direction = UISwipeGestureRecognizerDirection.Left
@@ -52,6 +59,8 @@ class LoginScreenViewController : VideoSplashViewController {
         view.addGestureRecognizer(swipeDown!)
         view.addGestureRecognizer(swipeUp!)
         view.addGestureRecognizer(tap!)
+        
+        authenticationSession.delegate = self
     }
     
     func swiped() {
@@ -74,6 +83,7 @@ class LoginScreenViewController : VideoSplashViewController {
 //                    self.contentURL = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("test2", ofType: "mp4")!)
                     
                     UIView.animateWithDuration(1.00, delay:0.00, options: [.CurveEaseIn], animations: {
+                        self.facebookLoginButton.alpha = 1.00
                         self.alpha = 0.70
                         }, completion: nil)
                 }
@@ -87,5 +97,38 @@ class LoginScreenViewController : VideoSplashViewController {
     
     @IBAction func closeButtonClicked(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+
+    @IBAction func facebookLoginButtonClicked(sender: AnyObject)
+    {
+//        var fbAccessToken = FBSDKAccessToken.currentAccessToken().tokenString
+        
+        let loginManager : FBSDKLoginManager = FBSDKLoginManager.init()
+        
+        let facebookReadPermissions = ["public_profile", "email", "user_friends"]
+        
+        loginManager.logInWithReadPermissions(facebookReadPermissions, fromViewController: self) { (result, error) -> Void in
+            if (error != nil)
+            {
+                self.authenticationSession.challenge(result.token.tokenString)
+                debugPrint("Facebook login successful")
+                debugPrint(result.token.tokenString)
+            }
+            else if result.isCancelled
+            {
+                debugPrint("Facebook login cancelled")
+            }
+            else
+            {
+                debugPrint("Facebook login sucks")
+            }
+        }
+        
+        
+    }
+    
+    func didFinishAuthenticating(user: User?, error: NSError?) {
+       debugPrint(user?.name)
     }
 }

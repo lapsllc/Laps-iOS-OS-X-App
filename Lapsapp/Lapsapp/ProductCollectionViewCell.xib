@@ -24,18 +24,14 @@
                             <constraint firstAttribute="width" constant="140" id="6hm-Pd-rqV"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarbucksLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vrE-ji-iKn">
-                        <rect key="frame" x="140" y="0.0" width="247" height="164"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhW-DB-Ydf">
-                        <rect key="frame" x="156" y="16" width="223" height="20.5"/>
+                        <rect key="frame" x="146" y="16" width="233" height="20.5"/>
                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4e-hy-Ji5">
-                        <rect key="frame" x="156" y="83.5" width="117" height="20.5"/>
+                        <rect key="frame" x="146" y="56.5" width="117" height="20.5"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="0nP-71-AZY"/>
                         </constraints>
@@ -43,6 +39,10 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarbucksLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vrE-ji-iKn">
+                        <rect key="frame" x="140" y="0.0" width="247" height="164"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -53,11 +53,11 @@
                 <constraint firstItem="vrE-ji-iKn" firstAttribute="leading" secondItem="aEJ-GE-edR" secondAttribute="trailing" id="LG3-ov-tBJ"/>
                 <constraint firstAttribute="bottom" secondItem="aEJ-GE-edR" secondAttribute="bottom" id="XTU-WJ-yQE"/>
                 <constraint firstItem="vrE-ji-iKn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YDm-ab-cmT"/>
-                <constraint firstAttribute="bottom" secondItem="t4e-hy-Ji5" secondAttribute="bottom" constant="60" id="ZEl-lO-Ryz"/>
                 <constraint firstAttribute="trailing" secondItem="vrE-ji-iKn" secondAttribute="trailing" id="dTK-xD-zGc"/>
-                <constraint firstItem="EhW-DB-Ydf" firstAttribute="leading" secondItem="aEJ-GE-edR" secondAttribute="trailing" constant="16" id="i8n-2Y-dnT"/>
+                <constraint firstItem="EhW-DB-Ydf" firstAttribute="leading" secondItem="aEJ-GE-edR" secondAttribute="trailing" constant="6" id="i8n-2Y-dnT"/>
                 <constraint firstAttribute="bottom" secondItem="vrE-ji-iKn" secondAttribute="bottom" id="kit-eB-VUb"/>
                 <constraint firstItem="EhW-DB-Ydf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="o5V-CW-hO2"/>
+                <constraint firstItem="t4e-hy-Ji5" firstAttribute="top" secondItem="EhW-DB-Ydf" secondAttribute="bottom" constant="20" id="ocn-3l-s6r"/>
                 <constraint firstItem="aEJ-GE-edR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rOX-Q4-els"/>
                 <constraint firstItem="t4e-hy-Ji5" firstAttribute="leading" secondItem="EhW-DB-Ydf" secondAttribute="leading" id="xPC-IU-v4V"/>
             </constraints>

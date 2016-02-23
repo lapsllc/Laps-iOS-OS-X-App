@@ -10,5 +10,6 @@
 #define FacebookBridgingHeader_h
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-#endif /* FacebookBridgingHeader_h */
+#endif
