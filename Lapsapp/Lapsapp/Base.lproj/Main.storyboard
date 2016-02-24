@@ -179,7 +179,7 @@
                                     <action selector="closeButtonClicked:" destination="TND-Nc-baa" eventType="touchUpInside" id="pYv-r3-uHl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4H-E0-hZY">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4H-E0-hZY">
                                 <rect key="frame" x="180" y="480" width="240" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3BM-TG-flp"/>
@@ -211,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QoP-Fb-1pu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="1311"/>
+            <point key="canvasLocation" x="1054" y="1333"/>
         </scene>
         <!--Frosted View Controller-->
         <scene sceneID="pf9-tI-aX9">

@@ -28,9 +28,9 @@ class MainPageViewController : UIViewController, UICollectionViewDelegateFlowLay
         let logoImageView = UIImageView(image: logo)
         logoImageView.frame.size = CGSize(width: 20, height: 40)
         logoImageView.contentMode = UIViewContentMode.ScaleAspectFit
-        self.navigationItem.titleView = logoImageView
+        navigationItem.titleView = logoImageView
         
-        performSegueWithIdentifier("MainPageToLoginScreen", sender: nil)
+        performSegueWithIdentifier("MainPageToLoginScreen", sender: self)
     }
 
     override func didReceiveMemoryWarning() {

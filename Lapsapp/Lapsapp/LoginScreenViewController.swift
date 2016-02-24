@@ -22,10 +22,12 @@ class LoginScreenViewController : VideoSplashViewController, AuthenticationSessi
     var swipeDown : UISwipeGestureRecognizer?
     var swipeUp : UISwipeGestureRecognizer?
     var tap : UITapGestureRecognizer?
-    let authenticationSession = LapsKit.AuthenticationSession()
+    
+    var authenticationSession : AuthenticationSession?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("test", ofType: "mp4")!)
         self.videoFrame = view.frame
         self.fillMode = .ResizeAspectFill
@@ -60,7 +62,7 @@ class LoginScreenViewController : VideoSplashViewController, AuthenticationSessi
         view.addGestureRecognizer(swipeUp!)
         view.addGestureRecognizer(tap!)
         
-        authenticationSession.delegate = self
+        authenticationSession = AuthenticationSession(delegate: self)
     }
     
     func swiped() {
@@ -111,9 +113,8 @@ class LoginScreenViewController : VideoSplashViewController, AuthenticationSessi
         loginManager.logInWithReadPermissions(facebookReadPermissions, fromViewController: self) { (result, error) -> Void in
             if (error != nil)
             {
-                self.authenticationSession.challenge(result.token.tokenString)
-                debugPrint("Facebook login successful")
-                debugPrint(result.token.tokenString)
+                debugPrint(error)
+                debugPrint("Facebook login sucks")
             }
             else if result.isCancelled
             {
@@ -121,14 +122,18 @@ class LoginScreenViewController : VideoSplashViewController, AuthenticationSessi
             }
             else
             {
-                debugPrint("Facebook login sucks")
+                debugPrint("Facebook login successful")
+                debugPrint(result.token)
+                self.authenticationSession!.challenge(result.token.tokenString)
+                
             }
         }
         
         
     }
     
-    func didFinishAuthenticating(user: User?, error: NSError?) {
-       debugPrint(user?.name)
+     func didFinishAuthenticating(user: User?, error: NSError?) {
+        debugPrint(error)
+        debugPrint(user?.name)
     }
 }

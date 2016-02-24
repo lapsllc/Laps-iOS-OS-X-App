@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2718660F1C7C9AF000C753A2 /* LapsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271866021C7C9AEB00C753A2 /* LapsKit.framework */; };
 		271FFC9D1C7C6423006897D3 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FFC9C1C7C6423006897D3 /* Toast.swift */; };
 		2746A7A71C78EC1600197C65 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2746A7A61C78EC1600197C65 /* ProductViewController.swift */; };
 		2746A7AA1C78ED0100197C65 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2746A7A81C78ED0100197C65 /* ProductCollectionViewCell.swift */; };
@@ -38,6 +39,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		271866011C7C9AEB00C753A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F74E61C74956300472CF1;
+			remoteInfo = "LapsKit iOS";
+		};
+		271866031C7C9AEB00C753A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F74F01C74956300472CF1;
+			remoteInfo = "LapsKit iOS Tests";
+		};
+		271866051C7C9AEB00C753A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F75051C74957B00472CF1;
+			remoteInfo = "LapsKit OS X";
+		};
+		271866071C7C9AEB00C753A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F750E1C74957B00472CF1;
+			remoteInfo = "LapsKit OS X Tests";
+		};
+		271866091C7C9AEB00C753A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F752E1C7495C900472CF1;
+			remoteInfo = "LapsKit tvOS";
+		};
+		2718660B1C7C9AEB00C753A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F75371C7495C900472CF1;
+			remoteInfo = "LapsKit tvOSTests";
+		};
+		2718660D1C7C9AEB00C753A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5F75211C7495AB00472CF1;
+			remoteInfo = "LapsKit watchOS";
+		};
 		2755A2811C724F2D006B5C5E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2755A2641C724F2C006B5C5E /* Project object */;
@@ -56,6 +106,7 @@
 
 /* Begin PBXFileReference section */
 		1538ABC9524110F4EC29965F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LapsKit.xcodeproj; path = "../../../Laps-Cocoa-SDK/LapsKit.xcodeproj"; sourceTree = "<group>"; };
 		271FFC9C1C7C6423006897D3 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		2746A7A61C78EC1600197C65 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		2746A7A81C78ED0100197C65 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -99,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2718660F1C7C9AF000C753A2 /* LapsKit.framework in Frameworks */,
 				944A26055AC4E3FE8527F277 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +172,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271865F61C7C9AEA00C753A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				271866021C7C9AEB00C753A2 /* LapsKit.framework */,
+				271866041C7C9AEB00C753A2 /* LapsKitTests.xctest */,
+				271866061C7C9AEB00C753A2 /* LapsKit.framework */,
+				271866081C7C9AEB00C753A2 /* LapsKitTests.xctest */,
+				2718660A1C7C9AEB00C753A2 /* LapsKit.framework */,
+				2718660C1C7C9AEB00C753A2 /* LapsKitTests.xctest */,
+				2718660E1C7C9AEB00C753A2 /* LapsKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2746A7A31C78EB6D00197C65 /* Products page */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +301,7 @@
 		3BF046CFA4920BC612FB103D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */,
 				1538ABC9524110F4EC29965F /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -377,6 +444,12 @@
 			mainGroup = 2755A2631C724F2C006B5C5E;
 			productRefGroup = 2755A26D1C724F2C006B5C5E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 271865F61C7C9AEA00C753A2 /* Products */;
+					ProjectRef = 271865F51C7C9AEA00C753A2 /* LapsKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2755A26B1C724F2C006B5C5E /* Laps iOS App */,
@@ -385,6 +458,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		271866021C7C9AEB00C753A2 /* LapsKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LapsKit.framework;
+			remoteRef = 271866011C7C9AEB00C753A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271866041C7C9AEB00C753A2 /* LapsKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LapsKitTests.xctest;
+			remoteRef = 271866031C7C9AEB00C753A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271866061C7C9AEB00C753A2 /* LapsKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LapsKit.framework;
+			remoteRef = 271866051C7C9AEB00C753A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		271866081C7C9AEB00C753A2 /* LapsKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LapsKitTests.xctest;
+			remoteRef = 271866071C7C9AEB00C753A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2718660A1C7C9AEB00C753A2 /* LapsKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LapsKit.framework;
+			remoteRef = 271866091C7C9AEB00C753A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2718660C1C7C9AEB00C753A2 /* LapsKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LapsKitTests.xctest;
+			remoteRef = 2718660B1C7C9AEB00C753A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2718660E1C7C9AEB00C753A2 /* LapsKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LapsKit.framework;
+			remoteRef = 2718660D1C7C9AEB00C753A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2755A26A1C724F2C006B5C5E /* Resources */ = {
